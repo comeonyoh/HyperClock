@@ -1,0 +1,662 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		44C0F001B487C9F5072AFF86 /* Pods_HyperClock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A7D2F1AD5D1A5445829BB1C /* Pods_HyperClock.framework */; };
+		DC1CB806410CDEFEA54B71D0 /* Pods_HyperClockTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B40CD1456CBD4CDE692C688 /* Pods_HyperClockTests.framework */; };
+		E11028371DE03F2600FCC61B /* TimelineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11028361DE03F2600FCC61B /* TimelineTests.swift */; };
+		E112A3BF1DE05CB20055BFC8 /* ClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E112A3BE1DE05CB20055BFC8 /* ClockView.swift */; };
+		E112A3C11DE05CBC0055BFC8 /* ClockView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E112A3C01DE05CBC0055BFC8 /* ClockView.xib */; };
+		E112A3C31DE05E0D0055BFC8 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E112A3C21DE05E0D0055BFC8 /* UIViewExtension.swift */; };
+		E112A3C51DE06ECF0055BFC8 /* PlayTimeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E112A3C41DE06ECF0055BFC8 /* PlayTimeManager.swift */; };
+		E112A3C71DE0736D0055BFC8 /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E112A3C61DE0736D0055BFC8 /* Animation.swift */; };
+		E112A3C91DE097AB0055BFC8 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E112A3C81DE097AB0055BFC8 /* UIViewControllerExtension.swift */; };
+		E112A3CB1DE098DC0055BFC8 /* PlayTimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E112A3CA1DE098DC0055BFC8 /* PlayTimeViewController.swift */; };
+		E112A3CD1DE09D340055BFC8 /* StoryboardExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E112A3CC1DE09D340055BFC8 /* StoryboardExtension.swift */; };
+		E12F90181DE0087B000CF80D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12F90171DE0087B000CF80D /* AppDelegate.swift */; };
+		E12F901D1DE0087B000CF80D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E12F901B1DE0087B000CF80D /* Main.storyboard */; };
+		E12F901F1DE0087B000CF80D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E12F901E1DE0087B000CF80D /* Assets.xcassets */; };
+		E12F90221DE0087B000CF80D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E12F90201DE0087B000CF80D /* LaunchScreen.storyboard */; };
+		E1C80C401DE00CDB00C2F57F /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C80C3F1DE00CDB00C2F57F /* Feed.swift */; };
+		E1C80C431DE00CF600C2F57F /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C80C421DE00CF600C2F57F /* Timeline.swift */; };
+		E1C80C451DE00F9800C2F57F /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C80C441DE00F9800C2F57F /* StringExtension.swift */; };
+		E1C80C4A1DE0102200C2F57F /* StringExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C80C491DE0102200C2F57F /* StringExtensionTests.swift */; };
+		E1C80C501DE0115B00C2F57F /* ClockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C80C4F1DE0115B00C2F57F /* ClockViewController.swift */; };
+		E1C80C531DE0141000C2F57F /* BeginningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C80C521DE0141000C2F57F /* BeginningView.swift */; };
+		E1C80C571DE0187300C2F57F /* BeginningView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1C80C561DE0187300C2F57F /* BeginningView.xib */; };
+		E1C80C591DE01A1D00C2F57F /* CALayerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C80C581DE01A1D00C2F57F /* CALayerExtension.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E12F90291DE0087B000CF80D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E12F900C1DE0087A000CF80D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E12F90131DE0087A000CF80D;
+			remoteInfo = HyperClock;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3568EAEA0CE68AB565E79534 /* Pods-HyperClockTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HyperClockTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HyperClockTests/Pods-HyperClockTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5B40CD1456CBD4CDE692C688 /* Pods_HyperClockTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HyperClockTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A7D2F1AD5D1A5445829BB1C /* Pods_HyperClock.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HyperClock.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A185053722FF23C7C63250CA /* Pods-HyperClock.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HyperClock.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HyperClock/Pods-HyperClock.debug.xcconfig"; sourceTree = "<group>"; };
+		B05A7C93CFCAAF8CEACEB494 /* Pods-HyperClock.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HyperClock.release.xcconfig"; path = "Pods/Target Support Files/Pods-HyperClock/Pods-HyperClock.release.xcconfig"; sourceTree = "<group>"; };
+		E11028361DE03F2600FCC61B /* TimelineTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineTests.swift; sourceTree = "<group>"; };
+		E112A3BE1DE05CB20055BFC8 /* ClockView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClockView.swift; sourceTree = "<group>"; };
+		E112A3C01DE05CBC0055BFC8 /* ClockView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ClockView.xib; sourceTree = "<group>"; };
+		E112A3C21DE05E0D0055BFC8 /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		E112A3C41DE06ECF0055BFC8 /* PlayTimeManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayTimeManager.swift; sourceTree = "<group>"; };
+		E112A3C61DE0736D0055BFC8 /* Animation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animation.swift; sourceTree = "<group>"; };
+		E112A3C81DE097AB0055BFC8 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		E112A3CA1DE098DC0055BFC8 /* PlayTimeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayTimeViewController.swift; sourceTree = "<group>"; };
+		E112A3CC1DE09D340055BFC8 /* StoryboardExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardExtension.swift; sourceTree = "<group>"; };
+		E12F90141DE0087B000CF80D /* HyperClock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HyperClock.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E12F90171DE0087B000CF80D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E12F901C1DE0087B000CF80D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E12F901E1DE0087B000CF80D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E12F90211DE0087B000CF80D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E12F90231DE0087B000CF80D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E12F90281DE0087B000CF80D /* HyperClockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HyperClockTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E12F902E1DE0087B000CF80D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1C80C3F1DE00CDB00C2F57F /* Feed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Feed.swift; sourceTree = "<group>"; };
+		E1C80C421DE00CF600C2F57F /* Timeline.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Timeline.swift; sourceTree = "<group>"; };
+		E1C80C441DE00F9800C2F57F /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		E1C80C491DE0102200C2F57F /* StringExtensionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensionTests.swift; sourceTree = "<group>"; };
+		E1C80C4F1DE0115B00C2F57F /* ClockViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClockViewController.swift; sourceTree = "<group>"; };
+		E1C80C521DE0141000C2F57F /* BeginningView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeginningView.swift; sourceTree = "<group>"; };
+		E1C80C561DE0187300C2F57F /* BeginningView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BeginningView.xib; sourceTree = "<group>"; };
+		E1C80C581DE01A1D00C2F57F /* CALayerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CALayerExtension.swift; sourceTree = "<group>"; };
+		F53A9C9592A62FBB080FB831 /* Pods-HyperClockTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HyperClockTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HyperClockTests/Pods-HyperClockTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E12F90111DE0087A000CF80D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44C0F001B487C9F5072AFF86 /* Pods_HyperClock.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E12F90251DE0087B000CF80D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC1CB806410CDEFEA54B71D0 /* Pods_HyperClockTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5F4E8DA9D894D4D999454F19 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6A7D2F1AD5D1A5445829BB1C /* Pods_HyperClock.framework */,
+				5B40CD1456CBD4CDE692C688 /* Pods_HyperClockTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8983DF76AA2664BFE1B632EB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A185053722FF23C7C63250CA /* Pods-HyperClock.debug.xcconfig */,
+				B05A7C93CFCAAF8CEACEB494 /* Pods-HyperClock.release.xcconfig */,
+				3568EAEA0CE68AB565E79534 /* Pods-HyperClockTests.debug.xcconfig */,
+				F53A9C9592A62FBB080FB831 /* Pods-HyperClockTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E12F900B1DE0087A000CF80D = {
+			isa = PBXGroup;
+			children = (
+				E12F90161DE0087B000CF80D /* HyperClock */,
+				E12F902B1DE0087B000CF80D /* HyperClockTests */,
+				E12F90151DE0087B000CF80D /* Products */,
+				8983DF76AA2664BFE1B632EB /* Pods */,
+				5F4E8DA9D894D4D999454F19 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E12F90151DE0087B000CF80D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E12F90141DE0087B000CF80D /* HyperClock.app */,
+				E12F90281DE0087B000CF80D /* HyperClockTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E12F90161DE0087B000CF80D /* HyperClock */ = {
+			isa = PBXGroup;
+			children = (
+				E1C80C511DE0133500C2F57F /* View */,
+				E1C80C3E1DE00BED00C2F57F /* Model */,
+				E1C80C411DE00CE900C2F57F /* Extension */,
+				E1C80C4E1DE0115000C2F57F /* ViewController */,
+				E12F90171DE0087B000CF80D /* AppDelegate.swift */,
+				E12F901B1DE0087B000CF80D /* Main.storyboard */,
+				E12F901E1DE0087B000CF80D /* Assets.xcassets */,
+				E12F90201DE0087B000CF80D /* LaunchScreen.storyboard */,
+				E12F90231DE0087B000CF80D /* Info.plist */,
+			);
+			path = HyperClock;
+			sourceTree = "<group>";
+		};
+		E12F902B1DE0087B000CF80D /* HyperClockTests */ = {
+			isa = PBXGroup;
+			children = (
+				E1C80C461DE00FD700C2F57F /* Extension */,
+				E11028361DE03F2600FCC61B /* TimelineTests.swift */,
+				E12F902E1DE0087B000CF80D /* Info.plist */,
+			);
+			path = HyperClockTests;
+			sourceTree = "<group>";
+		};
+		E1C80C3E1DE00BED00C2F57F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E1C80C3F1DE00CDB00C2F57F /* Feed.swift */,
+				E1C80C421DE00CF600C2F57F /* Timeline.swift */,
+				E112A3C41DE06ECF0055BFC8 /* PlayTimeManager.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E1C80C411DE00CE900C2F57F /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				E112A3C61DE0736D0055BFC8 /* Animation.swift */,
+				E1C80C441DE00F9800C2F57F /* StringExtension.swift */,
+				E112A3C21DE05E0D0055BFC8 /* UIViewExtension.swift */,
+				E1C80C581DE01A1D00C2F57F /* CALayerExtension.swift */,
+				E112A3CC1DE09D340055BFC8 /* StoryboardExtension.swift */,
+				E112A3C81DE097AB0055BFC8 /* UIViewControllerExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		E1C80C461DE00FD700C2F57F /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				E1C80C491DE0102200C2F57F /* StringExtensionTests.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		E1C80C4E1DE0115000C2F57F /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E1C80C4F1DE0115B00C2F57F /* ClockViewController.swift */,
+				E112A3CA1DE098DC0055BFC8 /* PlayTimeViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		E1C80C511DE0133500C2F57F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E112A3BE1DE05CB20055BFC8 /* ClockView.swift */,
+				E112A3C01DE05CBC0055BFC8 /* ClockView.xib */,
+				E1C80C521DE0141000C2F57F /* BeginningView.swift */,
+				E1C80C561DE0187300C2F57F /* BeginningView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E12F90131DE0087A000CF80D /* HyperClock */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E12F90311DE0087B000CF80D /* Build configuration list for PBXNativeTarget "HyperClock" */;
+			buildPhases = (
+				B1691AF2A267C0E509C903CB /* [CP] Check Pods Manifest.lock */,
+				E12F90101DE0087A000CF80D /* Sources */,
+				E12F90111DE0087A000CF80D /* Frameworks */,
+				E12F90121DE0087A000CF80D /* Resources */,
+				6E46351EA409ED01076776E0 /* [CP] Embed Pods Frameworks */,
+				A468AF29C05DFBFCC05C445B /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HyperClock;
+			productName = HyperClock;
+			productReference = E12F90141DE0087B000CF80D /* HyperClock.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E12F90271DE0087B000CF80D /* HyperClockTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E12F90341DE0087B000CF80D /* Build configuration list for PBXNativeTarget "HyperClockTests" */;
+			buildPhases = (
+				E252D9C069E50E3D8EFB8E0A /* [CP] Check Pods Manifest.lock */,
+				E12F90241DE0087B000CF80D /* Sources */,
+				E12F90251DE0087B000CF80D /* Frameworks */,
+				E12F90261DE0087B000CF80D /* Resources */,
+				AAA72974F06045ECB861CC6E /* [CP] Embed Pods Frameworks */,
+				5EF2A939265535856523DECD /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E12F902A1DE0087B000CF80D /* PBXTargetDependency */,
+			);
+			name = HyperClockTests;
+			productName = HyperClockTests;
+			productReference = E12F90281DE0087B000CF80D /* HyperClockTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E12F900C1DE0087A000CF80D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = ODOV;
+				TargetAttributes = {
+					E12F90131DE0087A000CF80D = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
+					E12F90271DE0087B000CF80D = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = E12F90131DE0087A000CF80D;
+					};
+				};
+			};
+			buildConfigurationList = E12F900F1DE0087A000CF80D /* Build configuration list for PBXProject "HyperClock" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E12F900B1DE0087A000CF80D;
+			productRefGroup = E12F90151DE0087B000CF80D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E12F90131DE0087A000CF80D /* HyperClock */,
+				E12F90271DE0087B000CF80D /* HyperClockTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E12F90121DE0087A000CF80D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E112A3C11DE05CBC0055BFC8 /* ClockView.xib in Resources */,
+				E12F90221DE0087B000CF80D /* LaunchScreen.storyboard in Resources */,
+				E12F901F1DE0087B000CF80D /* Assets.xcassets in Resources */,
+				E1C80C571DE0187300C2F57F /* BeginningView.xib in Resources */,
+				E12F901D1DE0087B000CF80D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E12F90261DE0087B000CF80D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5EF2A939265535856523DECD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HyperClockTests/Pods-HyperClockTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6E46351EA409ED01076776E0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HyperClock/Pods-HyperClock-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A468AF29C05DFBFCC05C445B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HyperClock/Pods-HyperClock-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AAA72974F06045ECB861CC6E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HyperClockTests/Pods-HyperClockTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B1691AF2A267C0E509C903CB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E252D9C069E50E3D8EFB8E0A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E12F90101DE0087A000CF80D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1C80C531DE0141000C2F57F /* BeginningView.swift in Sources */,
+				E112A3C71DE0736D0055BFC8 /* Animation.swift in Sources */,
+				E112A3BF1DE05CB20055BFC8 /* ClockView.swift in Sources */,
+				E1C80C431DE00CF600C2F57F /* Timeline.swift in Sources */,
+				E1C80C451DE00F9800C2F57F /* StringExtension.swift in Sources */,
+				E1C80C401DE00CDB00C2F57F /* Feed.swift in Sources */,
+				E1C80C501DE0115B00C2F57F /* ClockViewController.swift in Sources */,
+				E112A3C51DE06ECF0055BFC8 /* PlayTimeManager.swift in Sources */,
+				E112A3C91DE097AB0055BFC8 /* UIViewControllerExtension.swift in Sources */,
+				E112A3C31DE05E0D0055BFC8 /* UIViewExtension.swift in Sources */,
+				E112A3CD1DE09D340055BFC8 /* StoryboardExtension.swift in Sources */,
+				E1C80C591DE01A1D00C2F57F /* CALayerExtension.swift in Sources */,
+				E112A3CB1DE098DC0055BFC8 /* PlayTimeViewController.swift in Sources */,
+				E12F90181DE0087B000CF80D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E12F90241DE0087B000CF80D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1C80C4A1DE0102200C2F57F /* StringExtensionTests.swift in Sources */,
+				E11028371DE03F2600FCC61B /* TimelineTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E12F902A1DE0087B000CF80D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E12F90131DE0087A000CF80D /* HyperClock */;
+			targetProxy = E12F90291DE0087B000CF80D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E12F901B1DE0087B000CF80D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E12F901C1DE0087B000CF80D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E12F90201DE0087B000CF80D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E12F90211DE0087B000CF80D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E12F902F1DE0087B000CF80D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E12F90301DE0087B000CF80D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E12F90321DE0087B000CF80D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A185053722FF23C7C63250CA /* Pods-HyperClock.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HyperClock/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tiger.odov.HyperClock;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		E12F90331DE0087B000CF80D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B05A7C93CFCAAF8CEACEB494 /* Pods-HyperClock.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HyperClock/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tiger.odov.HyperClock;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		E12F90351DE0087B000CF80D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3568EAEA0CE68AB565E79534 /* Pods-HyperClockTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = HyperClockTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tiger.odov.HyperClockTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HyperClock.app/HyperClock";
+			};
+			name = Debug;
+		};
+		E12F90361DE0087B000CF80D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F53A9C9592A62FBB080FB831 /* Pods-HyperClockTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = HyperClockTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tiger.odov.HyperClockTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HyperClock.app/HyperClock";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E12F900F1DE0087A000CF80D /* Build configuration list for PBXProject "HyperClock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E12F902F1DE0087B000CF80D /* Debug */,
+				E12F90301DE0087B000CF80D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E12F90311DE0087B000CF80D /* Build configuration list for PBXNativeTarget "HyperClock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E12F90321DE0087B000CF80D /* Debug */,
+				E12F90331DE0087B000CF80D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E12F90341DE0087B000CF80D /* Build configuration list for PBXNativeTarget "HyperClockTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E12F90351DE0087B000CF80D /* Debug */,
+				E12F90361DE0087B000CF80D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E12F900C1DE0087A000CF80D /* Project object */;
+}

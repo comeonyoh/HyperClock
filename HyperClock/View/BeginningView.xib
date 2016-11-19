@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina3_5" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BeginningView" customModule="HyperClock" customModuleProvider="target">
+            <connections>
+                <outlet property="loadingIndicator" destination="ztd-s6-DOa" id="XcT-cr-aFJ"/>
+                <outlet property="promptMessageLabel" destination="OW7-vj-Oip" id="wQ5-6b-R9M"/>
+                <outlet property="startButton" destination="qxf-a4-myM" id="ZY7-Cw-v2R"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="ztd-s6-DOa">
+                    <rect key="frame" x="222.5" y="142.5" width="35" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="NC8-HK-0Pb"/>
+                        <constraint firstAttribute="width" constant="35" id="Rjs-0V-KaB"/>
+                    </constraints>
+                </activityIndicatorView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hyper Clock" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ktL-H9-qKk">
+                    <rect key="frame" x="118.5" y="48" width="243.5" height="51.5"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="43"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qxf-a4-myM">
+                    <rect key="frame" x="165" y="135" width="150" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="FYz-QG-jYo"/>
+                        <constraint firstAttribute="width" constant="150" id="ke7-ew-Yvx"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="21"/>
+                    <state key="normal" title="START">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="layer.borderWidth" value="1.5"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="15"/>
+                        <userDefinedRuntimeAttribute type="color" keyPath="layer.borderBackgroundColor">
+                            <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="didStartButtonClicked:" destination="-1" eventType="touchUpInside" id="o7e-6A-m57"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Click start button please!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OW7-vj-Oip">
+                    <rect key="frame" x="142" y="205" width="197" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.80000000000000004" green="0.21176470588235294" blue="0.25098039215686274" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="OW7-vj-Oip" firstAttribute="centerX" secondItem="qxf-a4-myM" secondAttribute="centerX" id="7zF-BU-HwJ"/>
+                <constraint firstItem="ztd-s6-DOa" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="MDt-SL-zx6"/>
+                <constraint firstItem="ztd-s6-DOa" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Z2P-at-EEr"/>
+                <constraint firstItem="ktL-H9-qKk" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="topMargin" constant="40" id="a6A-Vy-m93"/>
+                <constraint firstItem="ktL-H9-qKk" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="cOk-Fm-eLm"/>
+                <constraint firstItem="qxf-a4-myM" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="f9C-ac-rcv"/>
+                <constraint firstItem="qxf-a4-myM" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="qiJ-8o-iKW"/>
+                <constraint firstItem="OW7-vj-Oip" firstAttribute="top" secondItem="qxf-a4-myM" secondAttribute="bottom" constant="20" id="rcG-4q-7bJ"/>
+            </constraints>
+            <point key="canvasLocation" x="108" y="66"/>
+        </view>
+    </objects>
+</document>
