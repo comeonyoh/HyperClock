@@ -41,12 +41,12 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6WZ-Yf-fL6">
-                    <rect key="frame" x="267" y="454" width="130" height="32"/>
+                    <rect key="frame" x="267" y="453.5" width="130" height="33"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="130" id="hjQ-Ao-5Au"/>
                     </constraints>
-                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
-                    <state key="normal" title="Change play time">
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                    <state key="normal" title="play time">
                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
