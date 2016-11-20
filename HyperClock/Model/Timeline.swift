@@ -63,6 +63,11 @@ extension Timeline {
 
     func requestTimelineFeeds(withHandler handler: TimelineRequestHandler?) {
 
+        let config = URLSessionConfiguration.default
+        
+        config.timeoutIntervalForRequest = 10.0
+        config.timeoutIntervalForResource = 10.0
+
         Alamofire.request(serviceAPI).responseString { response in
             
             if response.result.error == nil, let resultString = response.result.value {
