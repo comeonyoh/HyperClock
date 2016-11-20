@@ -21,3 +21,10 @@ Elegant slideshow application with a clock
 * Alamofire(with AlamofireImage)
 * SwiftyJSON
 * pop
+
+
+###Install(How to use)
+
+* Cocoapods version(1.1.0 or higher)
+* Please open terminal and move to Project`s directory
+* MUST do insert 'pod install' to pull pods libraries
