@@ -11,24 +11,26 @@ import Alamofire
 import SwiftyJSON
 
 class Timeline {
- 
+    
     /**
      * this variable indicates current feed`s index that will be displayed in view
      */
     fileprivate var currentFeedIndex = 0
     
     fileprivate var feeds: Array<Feed> = [Feed]()
-
+    
     fileprivate let serviceAPI = "https://api.flickr.com/services/feeds/photos_public.gne?format=json"
+    
+    fileprivate var currentFeedLoads = false
     
     func feedsCount() -> Int {
         return self.feeds.count
     }
-
+    
     func increaseCurrentIndex() {
         currentFeedIndex += 1
     }
-
+    
     func getCurrentFeedIndex() -> Int {
         return self.currentFeedIndex
     }
@@ -58,17 +60,21 @@ class Timeline {
  */
 
 extension Timeline {
-
+    
     typealias TimelineRequestHandler = (_ isSuccess: Bool, _ error: Error?) -> Void
-
+    
     func requestTimelineFeeds(withHandler handler: TimelineRequestHandler?) {
-
+        
         let config = URLSessionConfiguration.default
         
         config.timeoutIntervalForRequest = 10.0
         config.timeoutIntervalForResource = 10.0
-
+        
+        self.currentFeedLoads = true
+        
         Alamofire.request(serviceAPI).responseString { response in
+            
+            self.currentFeedLoads = false
             
             if response.result.error == nil, let resultString = response.result.value {
                 
@@ -99,7 +105,7 @@ extension Timeline {
         
         //  iff the current index is 10 less than the total number
         //  request load more feed
-        if self.currentFeedIndex == self.feeds.count - 10 {
+        if self.currentFeedIndex > self.feeds.count - 10 && self.currentFeedLoads == false{
             return true
         }
         
@@ -112,19 +118,19 @@ extension Timeline {
         let suffix = ")"
         
         let items = "items"
-
+        
         if resultString.hasPrefix(prefix) && resultString.hasSuffix(suffix) {
             
             let refinedString =
                 resultString.substring(withRange: Range(start: prefix.length(),
-                                                       length: resultString.length() - prefix.length() - suffix.length()))
-
+                                                        length: resultString.length() - prefix.length() - suffix.length()))
+            
             let json = JSON.init(data: refinedString.data(using: .utf8)!)
-
+            
             for item in json[items].enumerated() {
-
+                
                 let feed = Feed.init(withDictionary: item.element.1.dictionary)
-
+                
                 self.feeds.append(feed)
             }
         }
